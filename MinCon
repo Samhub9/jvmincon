@@ -1,0 +1,21 @@
+package minutescon.java;
+
+import java.util.Scanner;
+
+public class MinutesConJava 
+{
+    public static void main(String[] args) 
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.println("Input the number of minutes: ");
+        int min=in.nextInt();
+        
+        int years= min/525600;
+        int days=(min/60/24)%365;
+        
+        System.out.println("Minutes is approximately "+years+" years and "+days+" days" );
+        
+        
+    }
+    
+}
